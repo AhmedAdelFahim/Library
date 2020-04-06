@@ -1,0 +1,10 @@
+{% extends 'books/base.html' %}
+{% load static %}
+{% block title %}
+    {{ book.title }}
+{% endblock %}
+{% block main_container %}
+    <h1>Title: {{ book.title }}</h1>
+    <h3>Author: {{ book.author }}</h3>
+    <img width="250" height="250" src="{% static  book.img %}">
+{% endblock %}
